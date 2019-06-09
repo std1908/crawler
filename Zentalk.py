@@ -10,6 +10,8 @@ import traceback
 from oauth2client.service_account import ServiceAccountCredentials as SAC
 import requests
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options  
+import os
 # reload(sys)
 # sys.setdefaultencoding('utf-8')
 
@@ -28,8 +30,15 @@ class Zentalk():
             username = 'enterbox.tw@gmail.com'
             password = 'qyxnag-2rusqe-taCtuj'
 
+            # chromedriver='/usr/lib/chromium-browser/chromedriver' 
+            # chrome_options=webdriver.ChromeOptions() 
+            # chrome_options.add_experimental_option("debuggerAddress",  "localhost:9222")
+            # chrome_options.add_argument("--headless")
+            # os.environ["webdriver.chrome.driver"]=chromedriver 
+            # driver = webdriver.Chrome(executable_path=chromedriver,options=chrome_options)
+
             options = webdriver.FirefoxOptions()
-            # options.add_argument("--headless")
+            options.add_argument("--headless")
             driver = webdriver.Firefox(firefox_options=options)
             driver.get(loginurl)
             time.sleep(0.5)
