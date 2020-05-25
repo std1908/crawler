@@ -5,8 +5,8 @@ import time
 import datetime
 import gspread
 import traceback 
-# reload(sys)
-# sys.setdefaultencoding('utf-8')
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 class worksheet():
 

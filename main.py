@@ -14,8 +14,8 @@ import gspread
 import traceback  
 from oauth2client.service_account import ServiceAccountCredentials as SAC
 import requests
-# reload(sys)
-# sys.setdefaultencoding('utf-8')
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 GDriveJSON = 'crawler-b7cde5d7bc9e.json'
 GSpreadSheetURL = "發文列表"

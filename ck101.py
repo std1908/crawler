@@ -12,8 +12,8 @@ import requests
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options  
 import os
-# reload(sys)
-# sys.setdefaultencoding('utf-8')
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
 class ck101():
 

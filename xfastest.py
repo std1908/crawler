@@ -31,7 +31,7 @@ class xfastest():
             password = 'hr-38m4=2im'
 
             options = webdriver.FirefoxOptions()
-            # options.add_argument("--headless")
+            options.add_argument("--headless")
             driver = webdriver.Firefox(firefox_options=options)
             driver.get(loginurl)
             time.sleep(0.5)
